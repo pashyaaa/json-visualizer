@@ -1,4 +1,4 @@
-# JsonVisualizer
+# Json Visualizer
 
 Visit https://pashyaaa.github.io/json-visualizer for testing.
 
