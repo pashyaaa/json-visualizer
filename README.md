@@ -1,6 +1,6 @@
 # JsonVisualizer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+Visit https://pashyaaa.github.io/json-visualizer for testing.
 
 ## Development server
 
