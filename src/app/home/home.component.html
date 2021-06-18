@@ -1,5 +1,11 @@
-<div style="display: flex; height: 100%;">
-    <app-json-input style="width: 30%;" (dataChanged)="dataChanged($event)"></app-json-input>
-    <app-visualizer style="width: 70%;" [jsonData]="jsonData"></app-visualizer>
+<div style="height: 100%;">
+    <div style="height: 6%;">
+        <app-nav-bar></app-nav-bar>
+    </div>
+    <div style="display: flex; height: 94%;">
+        <app-json-input style="width: 30%;" (dataChanged)="dataChanged($event)"></app-json-input>
+        <app-visualizer style="width: 70%;" [jsonData]="jsonData"></app-visualizer>
+    </div>
 </div>
+
 

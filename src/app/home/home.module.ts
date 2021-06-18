@@ -6,6 +6,7 @@ import { VisualizerComponent } from './visualizer/visualizer.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { FormsModule } from '@angular/forms';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     HomeComponent,
     JsonInputComponent,
-    VisualizerComponent
+    VisualizerComponent,
+    NavBarComponent
   ],
   imports: [
     CommonModule,
