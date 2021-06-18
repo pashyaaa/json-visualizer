@@ -23,6 +23,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { A11yModule } from '@angular/cdk/a11y';
+import { CdkTableModule } from '@angular/cdk/table';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 const materialComponents =[
@@ -52,6 +55,9 @@ const materialComponents =[
   MatDialogModule,
   MatSlideToggleModule,
   MatAutocompleteModule,
+  A11yModule,
+  CdkTableModule,
+  DragDropModule,
 ]
 
 @NgModule({
