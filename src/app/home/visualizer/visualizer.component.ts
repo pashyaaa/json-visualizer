@@ -9,11 +9,11 @@ import { CdkDragStart, CdkDropList, moveItemInArray } from '@angular/cdk/drag-dr
 })
 export class VisualizerComponent implements OnInit {
 
-  ELEMENT_DATA = [
-    { "name": "Ram", "email": "Ram@gmail.com" },
-    { "name": "Bob", "email": "bob32@gmail.com" }
-  ];
-  //ELEMENT_DATA = [];
+  // ELEMENT_DATA = [
+  //   { "name": "Ram", "email": "Ram@gmail.com" },
+  //   { "name": "Bob", "email": "bob32@gmail.com" }
+  // ];
+  ELEMENT_DATA = [];
   dataSource = new MatTableDataSource<any>(this.ELEMENT_DATA);
   displayedColumns = this.getHeaders(this.ELEMENT_DATA);
   private _jsonData: any = [];

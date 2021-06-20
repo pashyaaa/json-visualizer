@@ -10080,11 +10080,11 @@ function VisualizerComponent_tr_3_Template(rf, ctx) { if (rf & 1) {
 } }
 class VisualizerComponent {
     constructor() {
-        this.ELEMENT_DATA = [
-            { "name": "Ram", "email": "Ram@gmail.com" },
-            { "name": "Bob", "email": "bob32@gmail.com" }
-        ];
-        //ELEMENT_DATA = [];
+        // ELEMENT_DATA = [
+        //   { "name": "Ram", "email": "Ram@gmail.com" },
+        //   { "name": "Bob", "email": "bob32@gmail.com" }
+        // ];
+        this.ELEMENT_DATA = [];
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatTableDataSource"](this.ELEMENT_DATA);
         this.displayedColumns = this.getHeaders(this.ELEMENT_DATA);
         this._jsonData = [];
@@ -10189,6 +10189,8 @@ class JsonInputComponent {
     }
     emitChange() {
         this.dataChanged.emit(this.jsonData);
+        let obj = JSON.parse(this.jsonData);
+        this.jsonData = JSON.stringify(obj, undefined, 4);
     }
 }
 JsonInputComponent.ɵfac = function JsonInputComponent_Factory(t) { return new (t || JsonInputComponent)(); };
@@ -10232,7 +10234,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 6, vars: 1, consts: [[2, "height", "100%"], [2, "height", "6%"], [2, "display", "flex", "height", "94%"], [2, "width", "30%", 3, "dataChanged"], [2, "width", "70%", 3, "jsonData"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 6, vars: 1, consts: [[2, "height", "100%"], [2, "height", "5%"], [2, "display", "flex", "height", "95%"], [2, "width", "30%", 3, "dataChanged"], [2, "width", "70%", 3, "jsonData"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "app-nav-bar");
@@ -26973,7 +26975,7 @@ NavBarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    } }, directives: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_4__["MatToolbar"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_4__["MatToolbarRow"]], styles: [".mat-toolbar[_ngcontent-%COMP%] {\n  background-color: #F3F2F0;\n  padding: 5px;\n}\n\n.logo[_ngcontent-%COMP%] {\n  height: 30px;\n  width: 30px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxuYXYtYmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0kseUJBQUE7RUFDQSxZQUFBO0FBQ0o7O0FBRUE7RUFDSSxZQUFBO0VBQ0EsV0FBQTtBQUNKIiwiZmlsZSI6Im5hdi1iYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0LXRvb2xiYXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjNGMkYwO1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG59XHJcblxyXG4ubG9nb3tcclxuICAgIGhlaWdodDogMzBweDtcclxuICAgIHdpZHRoOiAzMHB4O1xyXG59XHJcbiJdfQ== */"] });
+    } }, directives: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_4__["MatToolbar"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_4__["MatToolbarRow"]], styles: [".mat-toolbar[_ngcontent-%COMP%] {\n  background-color: #F3F2F0;\n  padding: 5px;\n  height: 100%;\n  justify-content: center;\n}\n\n.logo[_ngcontent-%COMP%] {\n  height: 30px;\n  width: 30px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxuYXYtYmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0kseUJBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLHVCQUFBO0FBQ0o7O0FBRUE7RUFDSSxZQUFBO0VBQ0EsV0FBQTtBQUNKIiwiZmlsZSI6Im5hdi1iYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0LXRvb2xiYXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjNGMkYwO1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuXHJcbi5sb2dve1xyXG4gICAgaGVpZ2h0OiAzMHB4O1xyXG4gICAgd2lkdGg6IDMwcHg7XHJcbn1cclxuIl19 */"] });
 
 
 /***/ }),

@@ -17,6 +17,8 @@ export class JsonInputComponent implements OnInit {
 
   emitChange(){
     this.dataChanged.emit(this.jsonData)
+    let obj = JSON.parse(this.jsonData);
+    this.jsonData = JSON.stringify(obj, undefined, 4);
   }
 
 }
