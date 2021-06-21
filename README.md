@@ -1,5 +1,6 @@
 # Json Visualizer
 
+Json Visualizer is created for visualizing json data into various presentable format such as tables, line graphs, bar graphs, and pie charts.
 Visit https://pashyaaa.github.io/json-visualizer for testing.
 
 ## Development server
